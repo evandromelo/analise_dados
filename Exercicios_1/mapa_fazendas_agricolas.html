@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5cc216aabd20d3f1968fb6d465abe527 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5cc216aabd20d3f1968fb6d465abe527" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5cc216aabd20d3f1968fb6d465abe527 = L.map(
+                "map_5cc216aabd20d3f1968fb6d465abe527",
+                {
+                    center: [-21.15, -47.925],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_18ce3a78c8ee20ba29a2c47abd4c0250 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_18ce3a78c8ee20ba29a2c47abd4c0250.addTo(map_5cc216aabd20d3f1968fb6d465abe527);
+        
+    
+            var marker_730c9ae09ba9416067947394a0426969 = L.marker(
+                [-21.2, -47.8],
+                {
+}
+            ).addTo(map_5cc216aabd20d3f1968fb6d465abe527);
+        
+    
+            var icon_71765c1a9124b2f9178b75d260b02795 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_032b7ede7012650e3400cde24ccc2bdf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d5aa15a5e1267d5978f20a469f097eb0 = $(`<div id="html_d5aa15a5e1267d5978f20a469f097eb0" style="width: 100.0%; height: 100.0%;"><b>Fazenda A</b><br>Prod: 4.2 t/ha<br>Área: 120 ha</div>`)[0];
+                popup_032b7ede7012650e3400cde24ccc2bdf.setContent(html_d5aa15a5e1267d5978f20a469f097eb0);
+            
+        
+
+        marker_730c9ae09ba9416067947394a0426969.bindPopup(popup_032b7ede7012650e3400cde24ccc2bdf)
+        ;
+
+        
+    
+    
+            marker_730c9ae09ba9416067947394a0426969.bindTooltip(
+                `<div>
+                     Fazenda A
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_730c9ae09ba9416067947394a0426969.setIcon(icon_71765c1a9124b2f9178b75d260b02795);
+            
+    
+            var marker_66976b640a7109722b44082b3feda2a5 = L.marker(
+                [-21.0, -48.1],
+                {
+}
+            ).addTo(map_5cc216aabd20d3f1968fb6d465abe527);
+        
+    
+            var icon_cf539c8507dc5d9a5a5cc565eaad30e1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fb438d0285feb1b94f6e3cea70df2e22 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d888cfcc480b2fc5028951a8ac1ebff5 = $(`<div id="html_d888cfcc480b2fc5028951a8ac1ebff5" style="width: 100.0%; height: 100.0%;"><b>Fazenda B</b><br>Prod: 3.8 t/ha<br>Área: 95 ha</div>`)[0];
+                popup_fb438d0285feb1b94f6e3cea70df2e22.setContent(html_d888cfcc480b2fc5028951a8ac1ebff5);
+            
+        
+
+        marker_66976b640a7109722b44082b3feda2a5.bindPopup(popup_fb438d0285feb1b94f6e3cea70df2e22)
+        ;
+
+        
+    
+    
+            marker_66976b640a7109722b44082b3feda2a5.bindTooltip(
+                `<div>
+                     Fazenda B
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_66976b640a7109722b44082b3feda2a5.setIcon(icon_cf539c8507dc5d9a5a5cc565eaad30e1);
+            
+    
+            var marker_cdea7bf308b130951674fd61ef9b417b = L.marker(
+                [-21.5, -47.5],
+                {
+}
+            ).addTo(map_5cc216aabd20d3f1968fb6d465abe527);
+        
+    
+            var icon_d1ec069cf9b3bd540968b05efdcd979f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_71b0754e6dc013ca9b7667dc8fa0056c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3d37414c7f773beac01d08828390e831 = $(`<div id="html_3d37414c7f773beac01d08828390e831" style="width: 100.0%; height: 100.0%;"><b>Fazenda C</b><br>Prod: 5.1 t/ha<br>Área: 200 ha</div>`)[0];
+                popup_71b0754e6dc013ca9b7667dc8fa0056c.setContent(html_3d37414c7f773beac01d08828390e831);
+            
+        
+
+        marker_cdea7bf308b130951674fd61ef9b417b.bindPopup(popup_71b0754e6dc013ca9b7667dc8fa0056c)
+        ;
+
+        
+    
+    
+            marker_cdea7bf308b130951674fd61ef9b417b.bindTooltip(
+                `<div>
+                     Fazenda C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cdea7bf308b130951674fd61ef9b417b.setIcon(icon_d1ec069cf9b3bd540968b05efdcd979f);
+            
+    
+            var marker_1695bb5a611b5e8aada5efba7160ecdd = L.marker(
+                [-20.9, -48.3],
+                {
+}
+            ).addTo(map_5cc216aabd20d3f1968fb6d465abe527);
+        
+    
+            var icon_f2d05aac9a5a2070cbf23346759ab89c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_445099e4f91f90b0e030f7c8aa7f7e8a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ccea507d8804438f1f112dff5b0d17d5 = $(`<div id="html_ccea507d8804438f1f112dff5b0d17d5" style="width: 100.0%; height: 100.0%;"><b>Fazenda D</b><br>Prod: 4.6 t/ha<br>Área: 150 ha</div>`)[0];
+                popup_445099e4f91f90b0e030f7c8aa7f7e8a.setContent(html_ccea507d8804438f1f112dff5b0d17d5);
+            
+        
+
+        marker_1695bb5a611b5e8aada5efba7160ecdd.bindPopup(popup_445099e4f91f90b0e030f7c8aa7f7e8a)
+        ;
+
+        
+    
+    
+            marker_1695bb5a611b5e8aada5efba7160ecdd.bindTooltip(
+                `<div>
+                     Fazenda D
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1695bb5a611b5e8aada5efba7160ecdd.setIcon(icon_f2d05aac9a5a2070cbf23346759ab89c);
+            
+    
+        function geo_json_1587c4033db31e9b19a1a93e5f8283b4_styler(feature) {
+            switch(feature.id) {
+                case "0": 
+                    return {"color": "black", "fillColor": "yellow", "fillOpacity": 0.6, "weight": 1};
+                case "1": 
+                    return {"color": "black", "fillColor": "orange", "fillOpacity": 0.6, "weight": 1};
+                default:
+                    return {"color": "black", "fillColor": "green", "fillOpacity": 0.6, "weight": 1};
+            }
+        }
+
+        function geo_json_1587c4033db31e9b19a1a93e5f8283b4_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_1587c4033db31e9b19a1a93e5f8283b4 = L.geoJson(null, {
+                onEachFeature: geo_json_1587c4033db31e9b19a1a93e5f8283b4_onEachFeature,
+            
+                style: geo_json_1587c4033db31e9b19a1a93e5f8283b4_styler,
+            ...{
+}
+        });
+
+        function geo_json_1587c4033db31e9b19a1a93e5f8283b4_add (data) {
+            geo_json_1587c4033db31e9b19a1a93e5f8283b4
+                .addData(data);
+        }
+            geo_json_1587c4033db31e9b19a1a93e5f8283b4_add({"features": [{"geometry": {"coordinates": [[[-47.81, -21.21], [-47.8, -21.21], [-47.8, -21.2], [-47.81, -21.2], [-47.81, -21.21]]], "type": "Polygon"}, "id": "0", "properties": {"cultura": "Soja", "id_talhao": 1, "ph_solo": 5.8}, "type": "Feature"}, {"geometry": {"coordinates": [[[-47.83, -21.22], [-47.82, -21.22], [-47.82, -21.21], [-47.83, -21.21], [-47.83, -21.22]]], "type": "Polygon"}, "id": "1", "properties": {"cultura": "Milho", "id_talhao": 2, "ph_solo": 6.2}, "type": "Feature"}, {"geometry": {"coordinates": [[[-47.85, -21.23], [-47.84, -21.23], [-47.84, -21.22], [-47.85, -21.22], [-47.85, -21.23]]], "type": "Polygon"}, "id": "2", "properties": {"cultura": "Cana", "id_talhao": 3, "ph_solo": 5.5}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_1587c4033db31e9b19a1a93e5f8283b4.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["id_talhao", "cultura", "ph_solo"];
+    let aliases = ["Talh\u00e3o:", "Cultura:", "pH do Solo:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+            geo_json_1587c4033db31e9b19a1a93e5f8283b4.addTo(map_5cc216aabd20d3f1968fb6d465abe527);
+        
+    
+            var layer_control_f5419a462705f07a92604f38057fd22b_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_18ce3a78c8ee20ba29a2c47abd4c0250,
+                },
+                overlays :  {
+                    "Talh\u00f5es Agr\u00edcolas" : geo_json_1587c4033db31e9b19a1a93e5f8283b4,
+                    "Precipita\u00e7\u00e3o (NOAA)" : macro_element_6ce710d710738477137ad57df5f89fb2,
+                },
+            };
+            let layer_control_f5419a462705f07a92604f38057fd22b = L.control.layers(
+                layer_control_f5419a462705f07a92604f38057fd22b_layers.base_layers,
+                layer_control_f5419a462705f07a92604f38057fd22b_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_5cc216aabd20d3f1968fb6d465abe527);
+
+        
+    
+            var macro_element_6ce710d710738477137ad57df5f89fb2 = L.tileLayer.wms(
+                "https://nowcoast.noaa.gov/arcgis/services/nowcoast/analysis_meteohydro_sfc_qpe_time/MapServer/WMSServer?",
+                {"attribution": "", "format": "image/png", "layers": "1", "styles": "", "transparent": true, "version": "1.1.1"}
+            );
+        
+    
+            macro_element_6ce710d710738477137ad57df5f89fb2.addTo(map_5cc216aabd20d3f1968fb6d465abe527);
+        
+    
+            var layer_control_d53f22e584db15dd33e3ad229d09932c_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_18ce3a78c8ee20ba29a2c47abd4c0250,
+                },
+                overlays :  {
+                    "Talh\u00f5es Agr\u00edcolas" : geo_json_1587c4033db31e9b19a1a93e5f8283b4,
+                    "Precipita\u00e7\u00e3o (NOAA)" : macro_element_6ce710d710738477137ad57df5f89fb2,
+                },
+            };
+            let layer_control_d53f22e584db15dd33e3ad229d09932c = L.control.layers(
+                layer_control_d53f22e584db15dd33e3ad229d09932c_layers.base_layers,
+                layer_control_d53f22e584db15dd33e3ad229d09932c_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_5cc216aabd20d3f1968fb6d465abe527);
+
+        
+</script>
+</html>

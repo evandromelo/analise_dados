@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ciência de Dados - Eng. Agrícola | UFV</title>
+  <style>
+    :root {
+      --ufv-verde: #006837;
+      --ufv-verde-claro: #c5e8b7;
+      --texto: #333;
+      --fundo: #fff;
+      --card: #f9f9f9;
+      --borda: #ddd;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: var(--texto);
+      background-color: var(--fundo);
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: var(--ufv-verde);
+      color: white;
+      text-align: center;
+      padding: 2.5rem 1rem;
+    }
+    header h1 { 
+      margin: 0; 
+      font-size: 2rem; 
+      font-weight: 600;
+    }
+    header p { 
+      margin: 0.5rem 0 0; 
+      font-size: 1.1rem; 
+      opacity: 0.9; 
+    }
+
+    nav {
+      background-color: #f1f1f1;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: var(--ufv-verde);
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+    section { 
+      margin-bottom: 3rem; 
+    }
+    h2 {
+      color: var(--ufv-verde);
+      border-bottom: 2px solid var(--ufv-verde-claro);
+      padding-bottom: 0.5rem;
+      margin-top: 2rem;
+    }
+    h3 {
+      color: #004d28;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .card {
+      background-color: var(--card);
+      border-left: 4px solid var(--ufv-verde);
+      border-radius: 8px;
+      padding: 1.2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin: 0 0 0.5rem 0;
+      color: var(--ufv-verde);
+    }
+    .card p {
+      margin: 0.5rem 0;
+      font-size: 0.95rem;
+    }
+    .btn {
+      display: inline-block;
+      background-color: var(--ufv-verde);
+      color: white;
+      padding: 0.5rem 1rem;
+      margin-top: 0.5rem;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+    .btn:hover {
+      background-color: #004d28;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #f1f1f1;
+      color: var(--texto);
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+    .footer-links a {
+      color: var(--ufv-verde);
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.6rem; }
+      nav a { display: block; margin: 0.5rem auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ciência de Dados Aplicada à Engenharia Agrícola</h1>
+    
+  </header>
+
+    <div class="container">
+
+    <!-- Introdução -->
+    <section id="intro">
+      <h2>Bem-vindo ao Tutorial 2</h2>
+      <p>
+        Este repositório, que contém <strong>datasets simulados e realistas</strong> é um tutorial básico para estudates de pós-graduação.
+        
+      </p>
+      <p>
+        Os dados são ideais para ensino, pesquisa e projetos práticos em áreas como:
+        irrigação, máquinas agrícolas, pós-colheita, sensores e automação.
+      </p>
+    </section>
+
+    <!-- Datasets -->
+    <section id="datasets">
+      <h2>📦 Datasets Disponíveis</h2>
+      
+      <div class="card-container">
+        
+        <div class="card">
+          <h3>Umidade do Solo</h3>
+          <p>Dados simulados de sensores em 4 profundidades ao longo de 60 dias.</p>
+          <p><strong>Variáveis:</strong> data, profundidade_cm, umidade_pct</p>
+          
+        </div>
+
+        <div class="card">
+          <h3>Irrigação por Gotejamento</h3>
+          <p>Ensaios com diferentes pressões e uniformidade de aplicação.</p>
+          <p><strong>Variáveis:</strong> tratamento, pressão_bar, vazao_lh, uniformidade_%</p>
+          
+        </div>
+
+        <div class="card">
+          <h3>Clima Horário</h3>
+          <p>Dados meteorológicos horários (radiação, temperatura, umidade, vento).</p>
+          <p><strong>Variáveis:</strong> data_hora, radiacao_wm2, temperatura_c, umidade_rel_%, vento_ms</p>
+         
+        </div>
+		<div class="card">
+          <h3>Produção de Cultivos</h3>
+          <p>Rendimento de milho, feijão e soja por sistema de plantio.</p>
+          <p><strong>Variáveis:</strong> cultura, sistema_plantio, produtividade_t_ha</p>
+          
+        </div>
+
+   
+         
